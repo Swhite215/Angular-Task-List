@@ -1,0 +1,128 @@
+/* Globals */
+
+body {
+  padding: 20px;
+  font-family: Garamond, sans-serif;
+  background: linear-gradient(white, blue);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+div.container {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+}
+
+/* Form Styling */
+form.angularForm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 5px;
+  padding-left: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #606060;
+}
+
+fieldset {
+  border: none;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 125%;
+  background-color: white;
+}
+
+input#statusCheck {
+  border: none;
+  width: 20px;
+  height: 20px;
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  border: none;
+  border-style: inset;
+}
+
+hr {
+  width: 110%;
+}
+
+/* Item Container Styles */
+div.itemContainer ol {
+  list-style: none;
+  padding: 0;
+}
+
+div.itemContainer li {
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin: 2%;
+  font-size: 125%;
+  background-color: #000044;
+  border-radius: 5px;
+  color: white;
+}
+
+div.itemContainer li:hover {
+  border: 1px solid white;
+  background-color: #000066;
+}
+
+/* Span Styles */
+span.deleteX {
+  float: right;
+  border: white;
+  background: white;
+  border-radius: 10px;
+  color: black;
+  width: 7%;
+  text-align: center;
+  transition: transform 650ms ease-in-out;
+}
+
+span.deleteX:hover {
+  transform: rotate(180deg);
+}
+
+span#copySpan {
+  text-align: center;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}

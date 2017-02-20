@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular To-Do List</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+  </head>
+
+  <!-- Don't forget Module ng-app="Module Name" -->
+  <body ng-app="myModule">
+    <header>
+      <h1>Angular Application Number One</h1>
+      <p>By Spencer White</p>
+      <hr>
+    </header>
+
+    <!-- Don't forget controller ng-controller="Controller Name"-->
+    <div class="container">
+      <form class="angularForm" action="index.html" method="post" ng-controller="listController">
+        <fieldset>
+          <h2>Task Helper v1.0</h2>
+          <input type="text" name="" value="" placeholder="Enter a Task" ng-model="addItem"><br>
+          <button type="button" name="button" ng-click="addToMaster()">ADD</button>
+          <!-- Add Button Needs to Be Here Full Width Beautifulness -->
+          <!-- Horizontal Line for Distinction -->
+          <hr>
+
+          <div class="itemContainer">
+            <h2>To-Do List</h2>
+            <!-- Button for Filtering -->
+            <input type="text" name="list filter" value="" ng-model="listFilter" placeholder="Search Tasks"><br>
+            <ol>
+              <li ng-repeat="task in masterList | filter: listFilter" ng-class="{strike: deleted}">
+                <span>
+                  <input type="checkbox" name="itemStatus" value="" id="statusCheck" ng-model="deleted" ng-click="updateItem(task)"></span>{{ task.name }}
+                  <span class="deleteX" ng-click="removeFromMaster(task)">X</span>
+              </li>
+            </ol>
+            <hr>
+          </div>
+
+        </fieldset>
+        <span id="copySpan">White Design &copy; 2017 </span>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
