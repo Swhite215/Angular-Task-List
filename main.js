@@ -35,5 +35,5 @@ app.controller("listController", function($scope) {
     console.log(task);
   }
 
-  
+
 });

@@ -3,9 +3,10 @@
 body {
   padding: 20px;
   font-family: Garamond, sans-serif;
-  background: linear-gradient(white, blue);
-  background-repeat: no-repeat;
-  height: 100%;
+  background: #ffff99;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 div.container {
