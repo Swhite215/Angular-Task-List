@@ -3,10 +3,9 @@
 body {
   padding: 20px;
   font-family: Garamond, sans-serif;
-  background: #ffff99;
+  background: #b35900;
   background-repeat: repeat;
   background-position: center;
-  background-size: cover;
 }
 
 div.container {
@@ -33,7 +32,7 @@ form.angularForm {
   width: 40%;
   padding: 5px;
   padding-left: 50px;
-  border: none;
+  border: 1px solid white;
   border-radius: 10px;
   background: #606060;
 }
