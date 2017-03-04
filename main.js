@@ -4,7 +4,7 @@ app.controller("listController", function($scope) {
   //beginning array for list.
   $scope.masterList = [];
 
-  console.log($scope.masterList);
+  // console.log($scope.masterList);
   //function to add items to the list
   $scope.addToMaster = function() {
     var itemName = $scope.addItem;
