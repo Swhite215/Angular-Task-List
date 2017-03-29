@@ -13,7 +13,9 @@ header {
 
 /* Form Styling */
 form.form-control {
-  color: #FF0099;
+  border-radius: 0;
+  border-style: ridge;
+  color: #FF00FF;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -33,7 +35,7 @@ form.form-control input {
 }
 
 .form-control input:focus {
-  border-color: #FF0099;
+  border-color: #FF00FF;
 }
 
 div.centerMe {
@@ -52,9 +54,46 @@ div.centerMe {
 }
 
 button.neonButton:active {
+  border: 1px solid black;
   transform: translateY(2px);
 }
 
-button.neonButton:focus {
-  border: 1px solid black;
+/* List Styling */
+input.statusCheck {
+  margin-right: 5px;
+  color: #FF00FF;
+  height: 24px;
+  position: relative;
+  top: 5px;
+}
+
+ul {
+  position: relative;
+}
+
+li {
+  font-size: 24px;
+  position: relative;
+}
+
+span.deleteX {
+  color: #DD0048;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  transition: transform 1s ease-in-out;
+}
+
+span.deleteX:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+
+/* Extra Styling */
+
+span#copySpan {
+  text-align: center;
+  color: white;
 }
