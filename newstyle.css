@@ -1,13 +1,60 @@
 /* Global Styles */
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FF0099;
+  font-family: 'Orbitron', sans-serif;
+}
+
 header {
   text-align: center;
 }
 
 /* Form Styling */
 form.form-control {
+  color: #FF0099;
   width: 100%;
   height: auto;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  background: none;
+}
+
+form.form-control h2 {
+  color: #FF00FF;
+}
+
+form.form-control input {
+  background: none;
+  color: white;
+  font-size: 18px;
+}
+
+.form-control input:focus {
+  border-color: #FF0099;
+}
+
+div.centerMe {
+  width: 100%;
+  text-align: center;
+}
+
+.form-control button.neonButton {
+  background-color: rgba(255,255,255,0.3);
+  font-size: 18px;
+  border: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+button.neonButton:active {
+  transform: translateY(2px);
+}
+
+button.neonButton:focus {
+  border: 1px solid black;
 }

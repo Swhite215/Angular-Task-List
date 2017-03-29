@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Angular To-Do List</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="newstyle.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,7 +25,9 @@
           <fieldset>
             <h2>Task Helper v1.0</h2>
             <input class="form-control" type="text" name="" value="" placeholder="Enter a Task" ng-model="addItem"><br>
-            <button type="button" name="button" ng-click="addToMaster()">ADD</button>
+            <div class="centerMe">
+              <button class="neonButton" type="button" name="button" ng-click="addToMaster(addItem)">ADD</button>
+            </div>
             <!-- Horizontal Line for Distinction -->
             <hr>
 
@@ -46,6 +49,9 @@
           <span id="copySpan">White Design &copy; 2017 </span>
         </form>
       </div>
+
+      <a href="https://github.com/Swhite215" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
     </div>
 
     <script type="text/javascript" src="main.js"></script>
