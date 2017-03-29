@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Angular To-Do List</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="newstyle.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
   </head>
 
@@ -16,31 +19,33 @@
 
     <!-- Don't forget controller ng-controller="Controller Name"-->
     <div class="container">
-      <form class="angularForm" action="index.html" method="post" ng-controller="listController">
-        <fieldset>
-          <h2>Task Helper v1.0</h2>
-          <input type="text" name="" value="" placeholder="Enter a Task" ng-model="addItem"><br>
-          <button type="button" name="button" ng-click="addToMaster()">ADD</button>
-          <!-- Horizontal Line for Distinction -->
-          <hr>
-
-          <div class="itemContainer">
-            <h2>To-Do List</h2>
-            <!-- Button for Filtering -->
-            <input type="text" name="list filter" value="" ng-model="listFilter" placeholder="Search Tasks"><br>
-            <ol>
-              <li ng-repeat="task in masterList | filter: listFilter" ng-class="{strike: deleted}">
-                <span>
-                  <input type="checkbox" name="itemStatus" value="" id="statusCheck" ng-model="deleted" ng-click="updateItem(task)"></span>{{ task.name }}
-                  <span class="deleteX" ng-click="removeFromMaster(task)">X</span>
-              </li>
-            </ol>
+      <div class="col-xs-12 col-md-4 col-md-offset-4">
+        <form class="form-control" action="index.html" method="post" ng-controller="listController">
+          <fieldset>
+            <h2>Task Helper v1.0</h2>
+            <input class="form-control" type="text" name="" value="" placeholder="Enter a Task" ng-model="addItem"><br>
+            <button type="button" name="button" ng-click="addToMaster()">ADD</button>
+            <!-- Horizontal Line for Distinction -->
             <hr>
-          </div>
 
-        </fieldset>
-        <span id="copySpan">White Design &copy; 2017 </span>
-      </form>
+            <div class="itemContainer">
+              <h2>To-Do List:</h2>
+              <!-- Button for Filtering -->
+              <input  class="form-control" type="text" name="list filter" value="" ng-model="listFilter" placeholder="Search Tasks"><br>
+              <ol>
+                <li ng-repeat="task in masterList | filter: listFilter" ng-class="{strike: deleted}">
+                  <span>
+                    <input type="checkbox" name="itemStatus" value="" id="statusCheck" ng-model="deleted" ng-click="updateItem(task)"></span>{{ task.name }}
+                    <span class="deleteX" ng-click="removeFromMaster(task)">X</span>
+                </li>
+              </ol>
+              <hr>
+            </div>
+
+          </fieldset>
+          <span id="copySpan">White Design &copy; 2017 </span>
+        </form>
+      </div>
     </div>
 
     <script type="text/javascript" src="main.js"></script>
